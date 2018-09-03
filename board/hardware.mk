@@ -2,8 +2,7 @@
 BOARD_USES_QCOM_HARDWARE := true
 
 # Lineage hardware
-BOARD_HARDWARE_CLASS += \
-    device/lenovo/A6020/lineagehw
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(LOCAL_PATH)/lineagehw|**/*.java
 
 #DoubleTapToWake support
 TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
