@@ -412,13 +412,6 @@ service time_daemon /system/vendor/bin/time_daemon
    group root
    writepid /dev/cpuset/system-background/tasks
 
-service hostapd /vendor/bin/hostapd -dd /data/misc/wifi/hostapd.conf
-    class late_start
-    user root
-    group root
-    oneshot
-    disabled
-
 service ril-daemon2 /vendor/bin/hw/rild -c 2 
     class main 
     user radio
