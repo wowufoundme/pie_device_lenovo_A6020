@@ -18,6 +18,9 @@
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += device/lenovo/A6020/overlay
 
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2016-10-01
+
 # Include package config fragments
 include $(LOCAL_PATH)/product/*.mk
 
