@@ -232,6 +232,9 @@ on post-fs-data
     mkdir /data/fota 0771
     chown system system /data/fota
 
+    # Bluetooth
+    chown bluetooth bluetooth /persist/.bt_nv.bin
+
     # Create /data/time folder for time-services
     mkdir /data/time/ 0700 system system
 
